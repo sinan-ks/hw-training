@@ -1,0 +1,33 @@
+2024-08-12 
+1. Meeting with the team heads of the organisation, given a clear view regarding the company structure and functioning. objective and vision of the organisation.
+2. Given Python Prerequisites and Python basics topics to study
+3. I have completed reviewing the following topics: 
+   1. Open Source Community: Understood the structure and benefits of open source projects and communities. 
+   2. The Internet: Gained a solid understanding of what the internet is and how it functions. 
+   3. Server/Virtual Servers: Learned about the roles and differences between physical and virtual servers. 
+   4. HTTP/HTTPS: Reviewed the protocols used for web communication and their secure versions. 
+   5. HTTP Status Codes: Familiarized myself with common HTTP status codes and their meanings. 
+   6. APIs: Understood the basics of APIs and how they enable communication between software applications.
+
+2024-08-13
+1. Studying the pending topics given yesterday and completed reviewing all Prerequisites and Python basics.
+2. Open source community,What is the internet ?,Server/Virtual servers, HTTP/HTTPS,HTTP Status codes,APIs,Data formats
+3. Python Indentation,All Data Types,Basic Operations,If else,Loops,Function,Class,Object,OOP concepts,self argument,Constructor, destructor,File operations,try, except,String formatting,Module importing, Exception and errors,Code readability, optimization, reliability
+
+2024-08-14
+1. Given next task on Familiarize common python packages and usages.
+2. Topics Covered Today :- Requests, json, csv, datetime, time, os, dropbox, Scrapy (Request, Response, Shell, Selector)
+
+2024-08-16
+1. Studying the pending topics on python packages.
+2. Topics Covered Today:- Parsel, re, Scrapy(Full), selenium, ast, urllib, xml, lxml, base64, random, ftplib, js2py
+
+2024-08-19
+1. Completed Familiarizing on python packages and uses.
+2. Topics Covered Today:- playwright, pika, logging, ipython ,cloudscraper
+
+2024-08-20
+1. Next Task given need to do the scrapy task which i got on interview time , now same task without using scrapy and do with given two Module. 
+   a) requests - https://docs.python-requests.org/en/master/ 
+   b) parsel - https://parsel.readthedocs.io/en/latest/usage.html
+2. Task in-progress (Scraped all data from the website and saved in json file, till now cleaning of data is pending)
