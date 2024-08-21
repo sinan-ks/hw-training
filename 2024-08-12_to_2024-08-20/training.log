@@ -31,4 +31,5 @@
 1. Next Task given need to do the scrapy task which i got on interview time , now same task without using scrapy and do with given two Module. 
    a) requests - https://docs.python-requests.org/en/master/ 
    b) parsel - https://parsel.readthedocs.io/en/latest/usage.html
-2. Task in-progress (Scraped all data from the website and saved in json file, till now cleaning of data is pending)
+2. Monthly Meeting with HR
+3. Task in-progress (Scraped all data from the website and saved in json file, till now cleaning of data is pending)
