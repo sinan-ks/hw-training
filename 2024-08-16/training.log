@@ -1,16 +1,16 @@
 Studying the pending topics on Python packages.
 Attended the Fun Friday activity at 11:00 am, which included various activities.
 
-Topics covered today:- 
-  a) Parsel
-  b) re
-  c) Scrapy (full)
-  d) Selenium
-  e) ast
-  f) urllib
-  g) xml
-  h) lxml
-  i) base64
-  j) random
-  k) ftplib
-  l) js2py
+Topics covered today:
+  a) Parsel: Library for extracting data from HTML/XML.
+  b) re: Module for regular expressions in Python.
+  c) Scrapy (full): Framework for web scraping with extensive features.
+  d) Selenium: Tool for browser automation and testing.
+  e) ast: Module for abstract syntax tree manipulation.
+  f) urllib: Package for working with URLs.
+  g) xml: Module for parsing and creating XML data.
+  h) lxml: Library for processing XML and HTML documents.
+  i) base64: Module for encoding and decoding binary data to/from base64.
+  j) random: Module for generating random numbers and sequences.
+  k) ftplib: Library for FTP protocol handling.
+  l) js2py: Library for converting JavaScript code to Python.

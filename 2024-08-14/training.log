@@ -1,11 +1,11 @@
 Given the next task to familiarize myself with common Python packages and their usages.
 
-Topics covered today include:- 
-   a) Requests 
-   b) json
-   c) csv
-   d) datetime
-   e) time
-   f) os
-   g) Dropbox
-   h) Scrapy (Request, Response, Shell, Selector)
+Topics covered today include:
+  a) Requests: Library for making HTTP requests.
+  b) json: Module for working with JSON data.
+  c) csv: Module for reading and writing CSV files.
+  d) datetime: Module for manipulating dates and times.
+  e) time: Module for time-related functions.
+  f) os: Module for interacting with the operating system.
+  g) Dropbox: Python SDK for interacting with Dropbox APIs.
+  h) Scrapy (Request, Response, Shell, Selector): Features of the Scrapy framework for web scraping, including making requests, handling responses, using the interactive shell, and parsing data with selectors.
