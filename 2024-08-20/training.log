@@ -1,0 +1,9 @@
+1. The next task is to redo the Scrapy project from the interview, but this time using alternative modules. Specifically, use the following:
+     a) Requests - https://docs.python-requests.org/en/master/ 
+     b) Parsel - https://parsel.readthedocs.io/en/latest/usage.html
+
+2. Monthly meeting with HR to discuss my experiences and progress related to the training.
+
+3. Task in progress:-
+    - I have scraped all data from the website using Requests and Parsel and saved it in a JSON file. 
+    - Data cleaning is still pending.
