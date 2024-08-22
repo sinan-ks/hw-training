@@ -35,3 +35,21 @@ class EmployeeTaskTracker:
         self.tasks[-1]["task_success"] = success
         EmployeeTaskTracker.employee_task_list.append(self.tasks[-1])
         print(f'Ended task: {self.tasks[-1]["task_title"]} at {self.tasks[-1]["end_time"]}')
+
+    def log_out(self):
+        self.logout_time = datetime.now().strftime('%Y-%m-%d %H:%M')
+        print(f'{self.emp_name} logged out at {self.logout_time}')
+        self._create_daily_json_file()
+
+    def _create_daily_json_file(self):
+        file_name = f'{self.emp_name}_{datetime.now().strftime("%Y-%m-%d")}.json'
+        data = {
+            "emp_name": self.emp_name,
+            "emp_id": self.emp_id,
+            "login_time": self.login_time,
+            "logout_time": self.logout_time,
+            "tasks": self.tasks
+        }
+        with open(file_name, 'w') as f:
+            json.dump(data, f, indent=4)
+        print(f'Task details saved in {file_name}')
