@@ -1,1 +1,7 @@
-Continued working on yesterday's Employee Tracking system program and completed it.
+1. Continued working on yesterday's Employee Tracking system program and completed it.
+
+ - Employee Task Tracker
+    a) This Python application tracks employee working hours and tasks. 
+       Each day, an employee logs in, starts and ends tasks, and logs out. 
+    b) The task details are saved in a daily JSON file.
+
