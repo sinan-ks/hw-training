@@ -53,3 +53,14 @@ class EmployeeTaskTracker:
         with open(file_name, 'w') as f:
             json.dump(data, f, indent=4)
         print(f'Task details saved in {file_name}')
+
+
+if __name__ == "__main__":
+
+    employee1 = EmployeeTaskTracker("Sinan", 1)
+    employee1.log_in()
+    employee1.start_task("Task-1 Data Scraping", "Completed the task and saved the data")
+    employee1.end_task(success=True)
+    employee1.start_task("Task-2 Employee Tracker", "Doing the task")
+    employee1.end_task(success=False)
+    employee1.log_out()
