@@ -1,7 +1,19 @@
 1. Continued working on yesterday's Employee Tracking system program and completed it.
 
- - Employee Task Tracker
-    a) This Python application tracks employee working hours and tasks. 
-       Each day, an employee logs in, starts and ends tasks, and logs out. 
-    b) The task details are saved in a daily JSON file.
+   - Employee Task Tracker:
+      a) This Python application tracks employee working hours and tasks.
+      b) Each day, an employee logs in, starts and ends tasks, and logs out.
+      c) The task details are saved in a daily JSON file.
 
+2. Attended a Google Meet with the trainer, discussed and clarified my doubts. 
+   I was also given browser analysis topics to study.
+
+3. Topics covered today:
+    a) Inspect - Tabs: Analyzing web page elements and structure through browser developer tools.
+    b) GET & POST requests: Methods for requesting data from and sending data to a web server.
+    c) PUT, DELETE, HEAD, PATCH, OPTIONS: HTTP methods for updating, deleting, retrieving headers, partially updating resources, and requesting available methods.
+    d) Inspect AJAX-loaded URLs: Examining URLs that load content dynamically using AJAX.
+    e) Client-side JavaScript execution: Running and debugging JavaScript code executed in the browser.
+    f) Request and response headers: Analyzing headers in HTTP requests and responses for additional metadata and control.
+    g) Cookies, session: Managing state and data storage across multiple requests using cookies and sessions.
+    h) User-agent: Identifying the browser and operating system making a request through the user-agent string.
