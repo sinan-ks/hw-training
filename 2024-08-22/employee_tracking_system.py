@@ -25,3 +25,13 @@ class EmployeeTaskTracker:
         }
         self.tasks.append(task)
         print(f'Started task: {task_title} at {task["start_time"]}')
+
+    def end_task(self, success=True):
+        if not self.tasks:
+            print("No task to end.")
+            return
+
+        self.tasks[-1]["end_time"] = datetime.now().strftime('%Y-%m-%d %H:%M')
+        self.tasks[-1]["task_success"] = success
+        EmployeeTaskTracker.employee_task_list.append(self.tasks[-1])
+        print(f'Ended task: {self.tasks[-1]["task_title"]} at {self.tasks[-1]["end_time"]}')
