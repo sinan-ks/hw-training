@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 
 class EmployeeTaskTracker:
-    employee_task_list = []
+    main_task_list = []
 
     def __init__(self, emp_name, emp_id):
         self.emp_name = emp_name
@@ -33,7 +33,7 @@ class EmployeeTaskTracker:
 
         self.tasks[-1]["end_time"] = datetime.now().strftime('%Y-%m-%d %H:%M')
         self.tasks[-1]["task_success"] = success
-        EmployeeTaskTracker.employee_task_list.append(self.tasks[-1])
+        EmployeeTaskTracker.main_task_list.append(self.tasks[-1])
         print(f'Ended task: {self.tasks[-1]["task_title"]} at {self.tasks[-1]["end_time"]}')
 
     def log_out(self):
