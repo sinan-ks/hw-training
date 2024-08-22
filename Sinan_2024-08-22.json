@@ -1,0 +1,29 @@
+{
+    "emp_name": "Sinan",
+    "emp_id": 1,
+    "login_time": "2024-08-22 11:05",
+    "logout_time": "2024-08-22 11:05",
+    "tasks": [
+        {
+            "task_title": "Task-1 Data Scraping",
+            "task_description": "Completed the task and saved the data",
+            "start_time": "2024-08-22 11:05",
+            "end_time": "2024-08-22 11:05",
+            "task_success": true
+        },
+        {
+            "task_title": "Task-2 Employee Tracker",
+            "task_description": "Doing the task",
+            "start_time": "2024-08-22 11:05",
+            "end_time": "2024-08-22 11:05",
+            "task_success": false
+        },
+        {
+            "task_title": "Task-3 Verifying Task-2",
+            "task_description": "Checking with inputs",
+            "start_time": "2024-08-22 11:05",
+            "end_time": "2024-08-22 11:05",
+            "task_success": true
+        }
+    ]
+}

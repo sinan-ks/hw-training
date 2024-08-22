@@ -15,7 +15,7 @@ class EmployeeTaskTracker:
         self.login_time = datetime.now().strftime('%Y-%m-%d %H:%M')
         print(f'{self.emp_name} logged in at {self.login_time}')
 
-    def start_task(self, task_title, task_description):
+    def add_task(self, task_title, task_description):
         task = {
             "task_title": task_title,
             "task_description": task_description,
@@ -59,8 +59,10 @@ if __name__ == "__main__":
 
     employee1 = EmployeeTaskTracker("Sinan", 1)
     employee1.log_in()
-    employee1.start_task("Task-1 Data Scraping", "Completed the task and saved the data")
+    employee1.add_task("Task-1 Data Scraping", "Completed the task and saved the data")
     employee1.end_task(success=True)
-    employee1.start_task("Task-2 Employee Tracker", "Doing the task")
+    employee1.add_task("Task-2 Employee Tracker", "Doing the task")
     employee1.end_task(success=False)
+    employee1.add_task("Task-3 Verifying Task-2", "Checking with inputs")
+    employee1.end_task(success=True)
     employee1.log_out()
