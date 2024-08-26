@@ -1,0 +1,45 @@
+1. Given these topics to study:
+
+   Databases
+
+   a) MongoDB
+      i) Insert, delete, update, bulk insert
+     ii) Exporting, importing, dumping, and restoring
+    iii) GUI tools - Compass
+     iv) Sharding, clustering, and nodes
+      v) Indexing
+     vi) Object ID and generating a timestamp from it
+    vii) MongoDB guidelines: 
+         1. Indexing with a unique key
+         2. Collection and database sharding
+         3. Naming standards for collections and databases
+         4. Data backup
+
+   b) PostgreSQL (Psql)
+   c) MySQL
+
+2. Topics Covered Today: MongoDB
+
+   i) Insert, Delete, Update, Bulk Insert :
+      Understanding how to perform basic CRUD operations including inserting, deleting, updating, and bulk inserting data in MongoDB.
+      
+  ii) Exporting, Importing, Dumping, and Restoring :
+      Learning how to export and import data, as well as how to create data dumps and restore them in MongoDB.
+
+ iii) GUI Tools - Compass :
+      Using MongoDB Compass, the official GUI, to manage and visualize MongoDB data.
+
+  iv) Sharding, Clustering, and Nodes :
+      Exploring how to distribute data across multiple servers using sharding, and understanding the basics of clustering and node management.
+
+   v) Indexing :
+      Implementing indexing to optimize query performance and improve data retrieval speed in MongoDB.
+
+  vi) Object ID and Generating a Timestamp from It : 
+      Understanding the structure of MongoDB's Object ID and how to extract a timestamp from it.
+
+ vii) MongoDB Guidelines :
+      - Indexing with a Unique Key: Best practices for using unique keys in indexing.
+      - Collection and Database Sharding: Strategies for efficient sharding of collections and databases.
+      - Naming Standards for Collections and Databases: Guidelines for naming collections and databases in MongoDB.
+      - Data Backup: Methods and best practices for backing up MongoDB data.
