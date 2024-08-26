@@ -38,8 +38,3 @@
   vi) Object ID and Generating a Timestamp from It : 
       Understanding the structure of MongoDB's Object ID and how to extract a timestamp from it.
 
- vii) MongoDB Guidelines :
-      - Indexing with a Unique Key: Best practices for using unique keys in indexing.
-      - Collection and Database Sharding: Strategies for efficient sharding of collections and databases.
-      - Naming Standards for Collections and Databases: Guidelines for naming collections and databases in MongoDB.
-      - Data Backup: Methods and best practices for backing up MongoDB data.
