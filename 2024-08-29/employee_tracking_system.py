@@ -11,7 +11,9 @@ class EmployeeTaskTracker:
         self.tasks = []
         self.login_time = None
         self.logout_time = None
-        
+        self.client = MongoClient('mongodb://localhost:27017/')  # Connect to MongoDB
+        self.db = self.client['employee_tracking']  # Database 
+        self.collection = self.db['task_records']  # Collection 
 
     def log_in(self):
         self.login_time = datetime.now().strftime('%Y-%m-%d %H:%M')
@@ -41,10 +43,9 @@ class EmployeeTaskTracker:
     def log_out(self):
         self.logout_time = datetime.now().strftime('%Y-%m-%d %H:%M')
         print(f'{self.emp_name} logged out at {self.logout_time}')
-        self._create_daily_json_file()
+        self._save_to_mongodb()
 
-    def _create_daily_json_file(self):
-        file_name = f'{self.emp_name}_{datetime.now().strftime("%Y-%m-%d")}.json'
+    def _save_to_mongodb(self):
         data = {
             "emp_name": self.emp_name,
             "emp_id": self.emp_id,
@@ -52,9 +53,8 @@ class EmployeeTaskTracker:
             "logout_time": self.logout_time,
             "tasks": self.tasks
         }
-        with open(file_name, 'w') as f:
-            json.dump(data, f, indent=4)
-        print(f'Task details saved in {file_name}')
+        self.collection.insert_one(data)
+        print(f'Task details saved in MongoDB for {self.emp_name}')
 
 
 if __name__ == "__main__":
