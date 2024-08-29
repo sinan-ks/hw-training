@@ -3,6 +3,8 @@ from datetime import datetime
 from pymongo import MongoClient
 
 class EmployeeTaskTracker:
+    client = MongoClient('localhost', 27017) 
+    db = client['employee_tracking']  
     main_task_list = []
 
     def __init__(self, emp_name, emp_id):
@@ -11,9 +13,6 @@ class EmployeeTaskTracker:
         self.tasks = []
         self.login_time = None
         self.logout_time = None
-        self.client = MongoClient('mongodb://localhost:27017/')  # Connect to MongoDB
-        self.db = self.client['employee_tracking']  # Database 
-        self.collection = self.db['task_records']  # Collection 
 
     def log_in(self):
         self.login_time = datetime.now().strftime('%Y-%m-%d %H:%M')
@@ -43,9 +42,11 @@ class EmployeeTaskTracker:
     def log_out(self):
         self.logout_time = datetime.now().strftime('%Y-%m-%d %H:%M')
         print(f'{self.emp_name} logged out at {self.logout_time}')
+        self._create_daily_json_file()
         self._save_to_mongodb()
 
-    def _save_to_mongodb(self):
+    def _create_daily_json_file(self):
+        file_name = f'{self.emp_name}_{datetime.now().strftime("%Y-%m-%d")}.json'
         data = {
             "emp_name": self.emp_name,
             "emp_id": self.emp_id,
@@ -53,7 +54,22 @@ class EmployeeTaskTracker:
             "logout_time": self.logout_time,
             "tasks": self.tasks
         }
-        self.collection.insert_one(data)
+        with open(file_name, 'w') as f:
+            json.dump(data, f, indent=4)
+        print(f'Task details saved in {file_name}')
+
+    def _save_to_mongodb(self):
+        collection_name = f"{self.emp_name.replace(' ', '_')}_{self.emp_id}"
+        collection = self.db[collection_name]  # Create a collection with the employee's name and ID
+
+        data = {
+            "emp_name": self.emp_name,
+            "emp_id": self.emp_id,
+            "login_time": self.login_time,
+            "logout_time": self.logout_time,
+            "tasks": self.tasks
+        }
+        collection.insert_one(data)  # Use the dynamically created collection
         print(f'Task details saved in MongoDB for {self.emp_name}')
 
 
