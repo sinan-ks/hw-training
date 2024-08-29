@@ -1,3 +1,4 @@
 Resolved the error encountered yesterday during MongoDB server startup.
 Installed Compass, Mongo Shell, connected MongoDB to VSCode, and installed PyMongo.
 Updated the Employee Tracker task to save the output to a MongoDB database and also exported the data to a CSV file.
+Gained a better understanding of MongoDB, MongoDB Shell, MongoDB Compass, and PyMongo.
