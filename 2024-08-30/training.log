@@ -1,0 +1,26 @@
+1. A meeting was conducted with the trainer to discuss and clarify our doubts related to earlier tasks on 
+   Python packages and Python basics.
+
+2. Given the next task: 
+   i) Introduction to Linux: This includes Linux OS and basic commands, package installers, terminal text editors, IDEs, and virtual environments. 
+   ii) Redo the previous Scrapy task using requests and parsel, by splitting the crawling and parsing stages into 
+       two separate Python files and running the code. 
+
+3. Topics Covered Today:
+   
+     1. Linux OS and basic commands: Understanding the Linux operating system and practicing fundamental commands such as 
+        ls, cd, cp, pwd, rm, mkdir, rmdir, man, etc.
+     2. Package Installers: 
+        a) apt-get: A command-line tool for handling packages on Debian-based distributions. 
+        b) pip: A package installer for Python, used to install Python packages.
+     3. Terminal Text Editors: 
+        c) nano: A simple, easy-to-use text editor for the command line. 
+        d) Vim: A highly configurable text editor with advanced features.
+     4. IDE: 
+        e) Sublime Text: A popular text editor that supports many programming languages, including Python.
+     5. Virtual Environment: Setting up isolated environments for Python projects to manage dependencies.
+
+4. Task Status:
+
+   - Completed all the Introduction to Linux topics.
+   - Crawler + parser programming task is in progress.
