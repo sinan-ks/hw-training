@@ -1,0 +1,10 @@
+1. A meeting was conducted with the trainer to discuss our last programming task and identify necessary improvements. 
+   All suggested improvements were noted.
+
+2. Implemented all the improvements required for the code.
+
+3. The changes made to the code are:
+
+   - In the crawler file: Implemented logging and changed the product link extraction from CSS path to XPath.
+   - In the parser file: Implemented logging, converted None values for some listing and offer prices to empty strings, 
+     and updated the output JSON data format to JSON Lines.
