@@ -1,1 +1,4 @@
 Completed the crawler + parser programming task and saved the output in MongoDB and a JSON file.
+
+  - Developed a crawler and parser to extract data, which was then saved into both MongoDB and a JSON file. 
+  - The crawler collected data from the web, and the parser processed and stored it efficiently.
