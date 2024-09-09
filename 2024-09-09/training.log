@@ -1,0 +1,7 @@
+1. A meeting was conducted with the trainer to discuss browser analysis topics, 
+   including how to find headers, user agents, APIs, and how to use the curl command.
+
+2. The trainer suggested updating the previously completed crawler program by incorporating headers.
+
+3. I completed the task by adding headers, including user agents, to the program, 
+   successfully obtained the output, and saved it to MongoDB.
