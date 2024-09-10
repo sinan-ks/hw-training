@@ -1,0 +1,27 @@
+1. I updated my parser program by incorporating headers, including user agents. 
+   I successfully obtained the output and saved it to MongoDB.
+
+2. A new task was assigned on anti-scraping measures and evasion techniques.
+
+3. I covered the following topics:
+
+   - IP Blocking: Websites may block IP addresses with suspicious or excessive requests to prevent scraping.
+     Evasion Technique: IP Rotation: Use a pool of IP addresses to distribute requests and avoid triggering IP-based blocks.
+
+   - Headers-Based Blocking: Websites check headers like User-Agent or Referer for inconsistencies.
+     Evasion Technique: Header Spoofing: Rotate or randomize request headers to mimic different browsers and avoid detection.
+
+   - Crawling Pattern Detection: Detection is based on unnatural request patterns or speed.
+     Evasion Techniques:-
+       Request Throttling: Implement delays between requests to mimic human browsing behavior and avoid triggering rate-based blocks.
+       Randomized Crawling Patterns: Vary request intervals to avoid detection by pattern recognition systems.
+
+   - CAPTCHA Verification: Users are challenged with CAPTCHA puzzles to prove they are human.
+     Evasion Technique: CAPTCHA Bypass: Employ CAPTCHA-solving services or integrate with human-in-the-loop services to handle CAPTCHAs when encountered.
+
+   - JavaScript Validation: Websites use JavaScript challenges to block bots that can't execute scripts.
+     Evasion Technique: JavaScript Rendering: Use tools like Puppeteer or Selenium that can execute JavaScript like a real browser.
+
+   - Premium Services (PerimeterX, Distil Networks, reCAPTCHA): Platforms like PerimeterX, Distil Networks, and reCAPTCHA provide advanced bot mitigation 
+     and protection services to defend against scraping and automated attacks.
+     Evasion Technique: Anti-Scraping Libraries: Use libraries and tools designed to handle and bypass various anti-scraping techniques.
