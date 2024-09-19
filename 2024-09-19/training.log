@@ -1,0 +1,20 @@
+1. A meeting was conducted with the trainer to discuss doubts, and a new task was assigned:
+
+   For the website Lidl (https://sortiment.lidl.ch), we need to parse and extract the following details:
+
+      - item["product_name"]
+      - item["brand"]
+      - item["regular_price"]
+      - item["selling_price"]
+      - item["price_per_unit"]
+      - item["breadcrumb"]
+      - item["pdp_url"]
+      - item["product_description"]
+
+   Save the output to MongoDB and a JSON file.
+
+2. Task Status: 
+
+   - Extracted all required data and saved it to MongoDB and a JSON file. 
+   - Data cleaning is pending.
+
