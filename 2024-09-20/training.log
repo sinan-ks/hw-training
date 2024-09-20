@@ -1,0 +1,7 @@
+1. For the website Lidl (https://sortiment.lidl.ch), the crawler and parser codes were updated:
+
+      - Crawler code: Pagination and product URL extraction were updated using new XPath expressions.
+      - Parser code: Updated the brand name extraction to use a new XPath.
+      - Data cleaning: Cleaned all extracted data and saved the results to MongoDB and a JSON file.
+
+2. Task Status: Completed
