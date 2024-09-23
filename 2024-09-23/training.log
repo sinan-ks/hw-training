@@ -1,0 +1,25 @@
+1. - A meeting was conducted with the trainer to discuss and clarify our doubts. 
+   - The trainer explained the use of requests and response for interacting with websites, as well as 
+     using IPython for testing and debugging. 
+   - We also learned how to identify APIs of websites and use XPath in scripts to extract data that 
+     is not directly accessible.
+
+2. A task was given to modify the parser code from the previous day and add new fields to extract:
+
+       - the unique_id
+       - image URLs
+       - producthierarchy_level1
+       - producthierarchy_level2
+       - producthierarchy_level3
+       - producthierarchy_level4
+       - producthierarchy_level5
+       - producthierarchy_level6
+       - producthierarchy_level7
+    
+   Additionally, we were instructed to review the documentation for requests, response, and MongoDB.
+
+3. Task Status:
+
+   - Studied and practiced using requests and response in IPython.
+   - Practiced extracting data using XPath in scripts. 
+   - Parser program is in progress.
