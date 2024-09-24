@@ -1,0 +1,12 @@
+1. - A meeting was conducted with the trainer to discuss our doubts. 
+   - We also learned how to extract data using XPath in scripts when it is not directly accessible.
+
+2. The following documents were provided for reference to study XPath:
+
+      - https://devhints.io/xpath 
+      - https://www.guru99.com/xpath-selenium.html
+
+3. Task Status:
+
+   - Completed yesterday's parser program and saved the output in MongoDB and JSON.
+   - Reviewed both documents provided for reference.
