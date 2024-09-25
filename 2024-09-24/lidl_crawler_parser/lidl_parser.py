@@ -62,25 +62,39 @@ class LidlParser:
             
             selector = Selector(response.text)
 
+            # Extract the script content containing the image data
+            script_content = selector.xpath('//script[contains(text(),"mage/gallery/gallery")]/text()').get()
+            
+            if script_content:
+                # Extract JSON-like structure from the script 
+                json_match = re.search(r'\{.*"data":\[(.*?)\].*\}', script_content)
+                if json_match:
+                    json_data = f'{{"data":[{json_match.group(1)}]}}'
+                    image_data = json.loads(json_data)
+                    
+                    # Extract image URLs from the "data" key
+                    image_urls = [image['img'] for image in image_data['data']]
+                else:
+                    image_urls = []
+            else:
+                image_urls = []
+
             unique_id_text = selector.xpath('//p[@class="sku text-gray"]/text()').extract_first()
             unique_id = re.search(r'\d+', unique_id_text).group() if unique_id_text else ''
 
             product_name = selector.xpath('//div[@class="page-title-wrapper product"]//span[@itemprop="name"]//text()').extract()
             product_name = ' '.join([name.strip() for name in product_name]).strip() if product_name else ''
-            
+
             brand = selector.xpath('//div[@class="brand-details"]//p[@class="brand-name"]//text()').extract_first()
             brand = brand.strip() if brand else ''
-            
+
             regular_price = self.normalize_price(selector.xpath('//del[@class="pricefield__old-price"]//text()').extract())
             selling_price = self.normalize_price(selector.xpath('//strong[@class="pricefield__price"]//text()').extract())
-            
+
             # If regular price is missing, set it to the selling price
             regular_price = regular_price if regular_price else selling_price
-            
+
             price_per_unit = self.normalize_price_per_unit(selector.xpath('//span[@class="pricefield__footer"]//text()').extract())
-            
-            image_urls = selector.xpath('//meta[@property="og:image"]/@content').extract_first()
-            image_urls = [image_urls] if image_urls else []
 
             breadcrumb = selector.xpath('//div[@class="breadcrumbs"]//ul[@class="items"]//text()').extract()
             breadcrumb = [crumb.strip() for crumb in breadcrumb if crumb.strip()]
@@ -94,9 +108,9 @@ class LidlParser:
             product_description = ' '.join([desc.strip() for desc in product_description]).strip() if product_description else ''
 
             product_details = {
-                'unique_id': unique_id,  
+                'unique_id': unique_id,
                 'product_name': product_name,
-                'brand': brand,  
+                'brand': brand,
                 'regular_price': regular_price,
                 'selling_price': selling_price,
                 'price_per_unit': price_per_unit,
