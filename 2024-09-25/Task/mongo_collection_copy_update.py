@@ -13,27 +13,20 @@ class MongoDBCollectionCopier:
 
     def copy_collection(self, original_collection_name, new_collection_name):
         original_collection = self.db[original_collection_name]
-
-        if new_collection_name in self.db.list_collection_names():
-            self.db[new_collection_name].drop()
-            logging.info(f'Dropped existing collection: {new_collection_name}')
-
-        try:
-            documents = list(original_collection.find())  # Retrieve all documents
-            if documents: 
-                self.db[new_collection_name].insert_many(documents)  # Insert into new collection
-                logging.info(f'Copied {len(documents)} documents from {original_collection_name} to {new_collection_name}.')
-            else:
-                logging.warning(f"No documents found in {original_collection_name} to copy.")
-        except Exception as e:
-            logging.error(f'Error occurred while copying collection: {e}')
+        documents = list(original_collection.find())  # Retrieve all documents
+        
+        if documents:
+            self.db[new_collection_name].insert_many(documents)  
+            logging.info(f'Copied {len(documents)} documents from {original_collection_name} to {new_collection_name}.')
+        else:
+            logging.warning(f"No documents found in {original_collection_name} to copy.")
 
     def update_collection(self, collection_name):
         collection = self.db[collection_name]
         
         for document in collection.find():
             updates = {}
-            unique_id = document.get('unique_id', None) 
+            unique_id = document.get('unique_id')
 
             if document.get('regular_price') and document.get('selling_price'):
                 updates['currency'] = 'Swiss franc'
@@ -43,24 +36,20 @@ class MongoDBCollectionCopier:
             if updates:
                 collection.update_one({'_id': document['_id']}, {'$set': updates})
 
-            # Handle file names and image URLs
+            # Process image URLs and create file names
             for index, image_url in enumerate(image_urls):
                 url_path = urlparse(image_url).path
-                file_extension = os.path.splitext(url_path)[1] 
+                file_extension = os.path.splitext(url_path)[1]
 
                 file_name_key = f'file_name_{index + 1}'
                 image_url_key = f'image_url_{index + 1}'
-                
-                updates[file_name_key] = f'{unique_id}_{index + 1}{file_extension}'
-                
-                collection.update_one({'_id': document['_id']}, {'$set': {file_name_key: updates[file_name_key]}})
-                
-                updates[image_url_key] = image_url
-                collection.update_one({'_id': document['_id']}, {'$set': {image_url_key: updates[image_url_key]}})
+
+                file_name = f'{unique_id}_{index + 1}{file_extension}'
+                collection.update_one({'_id': document['_id']}, {'$set': {file_name_key: file_name, image_url_key: image_url}})
                 
                 logging.info(f'Updated document with _id: {document["_id"]} with new fields: {file_name_key}, {image_url_key}.')
 
-            # Remove the image_urls array field after processing
+            # Remove the image_urls field after processing
             collection.update_one({'_id': document['_id']}, {'$unset': {'image_urls': ""}})
             logging.info(f'Removed image_urls field from document with _id: {document["_id"]}.')
 
