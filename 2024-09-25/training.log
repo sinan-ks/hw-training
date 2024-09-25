@@ -1,0 +1,23 @@
+1. A meeting was conducted to discuss and clarify our doubts.
+
+2. A new task was assigned:
+
+   - We need to create a copy of our already saved collection in MongoDB using coding and 
+     update that collection with the following fields:
+
+       - currency: Include this field only if there are values in the selling price and regular price.
+       - file_name_1 (e.g., 4066447615852_1.png): The file name should be the value of unique_id, 
+                      incremented by number according to the image URLs, with the appropriate image URL 
+                      extension at the end.
+       - image_url_1: This field should contain the image URL and be incremented for each image URL.
+       - file_name_2
+       - image_url_2
+         etc...
+
+   - Additionally, we need to export the updated MongoDB output to JSON.
+
+3. Task Status:
+
+   - Successfully created a copy of the already saved collection using Python code and 
+     updated the copied collection with the required fields.
+   - Successfully exported the JSON output.
