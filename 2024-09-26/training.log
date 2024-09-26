@@ -1,0 +1,34 @@
+1. A meeting was conducted to discuss and clarify our doubts.
+
+2. A new task was assigned to check the feasibility of the website 
+   [ https://www.alliebeth.com ]
+
+    - After checking, we need to fill out a spreadsheet with our findings.
+
+    - The fields to check include:
+        - Address
+        - Agent phone numbers
+        - City
+        - Country
+        - Description
+        - Email
+        - First name
+        - Image URL
+        - Languages
+        - Last name
+        - Middle name
+        - Office name
+        - Office phone numbers
+        - Profile URL
+        - Social profiles
+        - State
+        - Title
+        - Website
+        - Zipcode
+
+    - We also need to randomly check these fields for some agents.
+
+3. Task Status:
+
+    - Random field checks for agents completed.
+    - Feasibility check in progress
