@@ -1,0 +1,17 @@
+1. A meeting was conducted to discuss and clarify our doubts.
+
+2. A new task was assigned:
+
+   - After completing the feasibility check for the website provided yesterday, 
+     we now need to develop code to extract all the required fields in the specified format.
+
+3. Task Status:
+
+   - The feasibility check of the website is complete, with all necessary parameters reviewed, 
+     and potential challenges identified.
+   - The feasibility sheet has been updated with the latest findings and improvements to ensure 
+     accuracy and alignment with project requirements.
+   - Development of the crawler code is complete, and fields from the listing page have been 
+     successfully extracted and saved in MongoDB.
+   - The parser code to extract the remaining fields is in progress, 
+     with data cleaning currently pending.
