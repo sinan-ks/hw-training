@@ -1,0 +1,26 @@
+1. Working on the development for yesterday's website, https://www.ewm.com.
+
+2. - Crawled and successfully extracted the following fields:
+
+         - Agent phone numbers
+         - Country
+         - Email
+         - First name
+         - Image URL
+         - Languages
+         - Last name
+         - Middle name
+         - Office name
+         - Office phone numbers
+         - Profile URL
+         - Social profiles
+         - Title
+         - Website 
+
+   - Additionally, all the extracted data has been cleaned and saved in MongoDb.
+
+3. Task Status:
+
+   - Crawling and extracting listing page data was completed successfully.
+   - Each field was cleaned appropriately.
+   - The parsing code to extract additional fields from the agent websites is currently in progress.
