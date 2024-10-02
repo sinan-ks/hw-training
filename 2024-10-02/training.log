@@ -1,0 +1,21 @@
+1. A meeting was conducted where we were taught MongoDB commands and how to check data using 
+   Sublime Text with regex.
+
+2. - A new task was assigned, involving data checking for JSON outputs from three different sites:
+
+        - exprealty
+        - realtysouth
+        - semonin realtors
+
+   - Additionally, the remaining parsing code to extract the following fields was completed:
+
+        - Description
+        - Address
+        - State
+        - Zipcode
+
+3. Task Status:
+
+   - Yesterday's development code to parse and extract all fields was successfully completed.
+   - Data checking for exprealty has been completed, and issues for cleanup have been noted.
+   - Data checking for realtysouth and semonin realtors is currently in progress.
