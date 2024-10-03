@@ -1,0 +1,28 @@
+1. - A meeting was conducted where we were taught about payloads, curl_cfii, and cookies 
+     when making requests. 
+   - We also learned about using POST requests with payloads to get responses and discussed code 
+     improvements:
+
+          - Using pipeline.py for MongoDB connection.
+          - Storing common fields like headers, payload, cookies, and base_url in settings.py.
+          - Moving data cleaning logic to export.py.
+
+2. - We were provided with the following resources for review and understanding:
+
+          - https://pypi.org/project/curl-cffi/
+          - https://curl-cffi.readthedocs.io/en/latest/impersonate.html
+          - https://pypi.org/project/html-sanitizer/
+
+   - Additionally, we were given the following websites to test responses using payloads, cookies, 
+     curl_cfii, and POST requests:
+
+          - https://baity.bh/
+          - https://exprealty.com/
+          - https://www.interspar.at/
+
+3. Task Status:
+
+   - Yesterday's pending data checking for realtysouth and semonin realtors has been completed, 
+     and issues for cleanup have been noted.
+   - Checking the provided websites using payloads, curl_cfii, cookies, and POST requests is 
+     currently in progress.
