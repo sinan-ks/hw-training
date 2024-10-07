@@ -1,0 +1,29 @@
+1. A meeting was conducted, and our doubts were cleared.
+
+2. A new development task was assigned to extract the following fields from the site 
+   https://www.remax.com/:
+
+        first_name
+        middle_name
+        last_name
+        office_name
+        title
+        description
+        languages
+        image_url
+        address
+        city
+        state
+        country
+        zipcode
+        office_phone_numbers
+        agent_phone_numbers
+        email
+        website
+        social
+        profile_url
+
+3. Task Status:
+
+   - Crawling is in progress; extracted first_name, middle_name, and last_name of all agents.
+   - Pagination has also been completed.
