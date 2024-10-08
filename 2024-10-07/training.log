@@ -25,5 +25,5 @@
 
 3. Task Status:
 
-   - Crawling is in progress; extracted first_name, middle_name, and last_name of all agents.
+   - Crawling is in progress; extracted 14 fields of all agents from the listing page.
    - Pagination has also been completed.
