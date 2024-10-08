@@ -1,0 +1,19 @@
+1. A meeting was conducted, and our doubts were cleared.
+
+2. Development Site Code Progress:
+
+   - Since I couldn't obtain profile URLs directly from the site, I extracted them from the sitemap 
+     using regex.
+   - The crawler code has been completed, successfully fetching all profile URLs of agents.
+   - The parser code is also completed, extracting all the required fields from the profile pages and saving the output to MongoDB.
+   - The code has been split into the following files:
+         - crawler.py: Handles the web crawling process to fetch URLs.
+         - parser.py: Extracts data from the fetched profile pages.
+         - settings.py: Contains common configurations such as headers and URLs.
+         - pipelines.py: Manages data storage processes, including saving to MongoDB.
+
+3. Task Status:
+
+   - The parser code output is in progress. 
+   - The export.py file to export the output in JSON format, excluding the MongoDB ID field and 
+     ensuring the fields are in the specified order, is pending.
