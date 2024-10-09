@@ -1,0 +1,51 @@
+1. A meeting was conducted, where we cleared our doubts and learned about proxies, the js2py module, 
+   cloud scrapers, and multiprocessing.
+
+2. A new site has been assigned for code development:
+
+    BASE_URL: https://haraj.com.sa
+
+    Fields to Extract:
+
+      - id
+      - url
+      - broker_display_name
+      - broker
+      - category
+      - category_url
+      - title
+      - property_type
+      - sub_category_1
+      - sub_category_2
+      - description
+      - location
+      - depth
+      - price
+      - currency
+      - price_per
+      - bedrooms
+      - bathrooms
+      - furnished
+      - rera_permit_number
+      - dtcm_licence
+      - scraped_ts
+      - amenities
+      - details
+      - agent_name
+      - reference_number
+      - number_of_photos
+      - user_id
+      - published_at
+      - phone_number
+      - date
+      - iteration_number
+      - latitude
+      - longitude
+
+3. Task Status:
+
+   - Yesterday's code development for the site has been completed. 
+     The code has been split into the following files: settings.py, crawler.py, parser.py, pipelines.py,
+     export.py and controller.py
+
+   - Today's development code feasibility checking is in progress.
