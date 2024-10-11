@@ -6,5 +6,5 @@
 
 3. Task Status:
 
-    - Crawling and extracting data have been completed.
-    - The parsing code to retrieve the remaining data is in progress.
+   - Crawling and extracting data have been completed, and the output has been saved in MongoDB.
+   - The parsing code to retrieve the remaining data is in progress.
