@@ -1,0 +1,10 @@
+1. Code Development Site Progress:
+
+   - Crawled and collected data for every field from each property category.
+   - Split the code into crawler.py, settings.py, pipelines.py, and export.py.
+   - Saved the final output in both MongoDB and JSON format.
+
+2. Task Status:
+
+   - Extraction of fields completed successfully.
+   - Data cleaning is in progress.
