@@ -1,0 +1,18 @@
+1. - A meeting was conducted, and our doubts were cleared.
+   - We discussed all necessary improvements to be made in our code.
+
+2. - Documentation was provided for MongoDB engine and RabbitMQ.
+   - We received CSV data that needs to be inspected, and the fields must be verified against the 
+     website before development.
+
+3.  - Yesterday's code development was completed, with the code organized into settings.py, crawler.py, 
+      parser.py, pipelines.py, controller.py, and export.py. 
+    - All corrections were made as discussed.
+
+3. Task Status:
+
+   - Yesterday's code development has been completed, with the output saved in MongoDB and JSON format.
+   - The MongoEngine and RabbitMQ documentation has been reviewed.
+   - Data field inspection and analysis on the site is in progress.
+   - I found the sitemap to retrieve all product URLs, and I also discovered that product details can 
+     be extracted from the script.
