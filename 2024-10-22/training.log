@@ -1,0 +1,10 @@
+1. Code Development Progress:
+
+   - Identified the API to retrieve all categories.
+   - Found the API to get all products from each category.
+   - Discovered the API to get the token and refresh token.
+   - Crawled and extracted all product URLs and saved them in MongoDB.
+
+2. Task Status:
+
+   - Parsing to extract the required fields from the product pages is in progress.
