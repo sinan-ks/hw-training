@@ -1,0 +1,8 @@
+1. Code Development Progress:
+
+   - Parsed and extracted some of the required fields using the API.
+   - The remaining fields need to be extracted using XPath.
+
+2. Task Status:
+
+   - Parsing to extract the remaining fields from the product pages is currently in progress.
