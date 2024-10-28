@@ -42,7 +42,7 @@ HEADERS = {
 
 # Client ID and Refresh Token
 CLIENT_ID = '2f55a356-1392-4de0-9cdf-f74f0666f43d'
-REFRESH_TOKEN = 'bEAZoKb70zXVpooeStuUvn5HYHA5-XsiK10Sz0MhlQU'
+REFRESH_TOKEN = ''
 
 # API URLs
 TOKEN_URL = 'https://www.bipa.at/mobify/proxy/api/shopper/auth/v1/organizations/f_ecom_aaft_prd/oauth2/token'
